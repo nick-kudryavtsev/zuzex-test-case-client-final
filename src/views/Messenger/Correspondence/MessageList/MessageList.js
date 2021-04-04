@@ -18,14 +18,18 @@ export const MessageList = () => {
 
     const emitDelete = (i) => {
         socket.emit('USER:DELETE_MESSAGE', i)
-        socket.on('USER:DELETE_MESSAGE', messages => {
-            dispatch(addMessage(messages))
-        })
+        // socket.on('USER:DELETE_MESSAGE', messages => {
+        //     dispatch(addMessage(messages))
+        // })
     }
 
     useEffect(() => {
         emitUser()
         socket.on('USER:MESSAGE', messages => {
+            dispatch(addMessage(messages))
+        })
+
+        socket.on('USER:DELETE_MESSAGE', messages => {
             dispatch(addMessage(messages))
         })
     }, [])
