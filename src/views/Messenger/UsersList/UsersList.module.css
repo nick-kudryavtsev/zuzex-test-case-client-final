@@ -1,0 +1,23 @@
+.usersList {
+    box-sizing: border-box;
+    width: 25%;
+    height: 250px;
+    padding: 10px;
+}
+
+.users {
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.users::-webkit-scrollbar {
+    padding: 2px 0;
+    background-color: white;
+    width: 10px;
+    border-radius: 10px;
+}
+
+.users::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 10px;
+}

@@ -1,0 +1,17 @@
+header {
+    height: 60px;
+    background-color: #e0e0e0;
+}
+
+.header {
+    /* очень фиговое решение*/
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.header span {
+    font-weight: bold;
+    margin-right: 10px;
+}

@@ -1,0 +1,47 @@
+.messageList {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: white;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.messageList::-webkit-scrollbar {
+    padding: 2px 0;
+    background-color: white;
+    width: 10px;
+    border-radius: 10px;
+}
+
+.messageList::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.message {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+    background-color: lightgray;
+}
+
+.message .content {
+    margin-left: 10px;
+}
+
+.message .content span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.message .content img {
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+.message * {
+    margin: 0;
+}

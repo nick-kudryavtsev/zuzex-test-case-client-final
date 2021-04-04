@@ -1,0 +1,9 @@
+.messenger {
+
+}
+
+.mainContent {
+    display: flex !important;
+    justify-content: space-between;
+    margin-top: 20px;
+}

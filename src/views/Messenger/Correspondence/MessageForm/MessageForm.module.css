@@ -1,0 +1,20 @@
+.messageForm {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.messageForm textarea{
+    resize: none;
+    outline: none;
+    border: none;
+    height: 70px;
+    width: 400px;
+    padding: 10px;
+}
+
+.messageForm input[type="file"]{
+    width: 300px;
+}
